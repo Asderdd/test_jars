@@ -1,0 +1,23 @@
+*** ./smali/com/android/server/wm/WindowManagerService.smali	2017-01-19 18:11:36.778304918 +0000
+--- /home/Asderdd/patchrom3/shamrock/temp/new_smali/services.jar.out/./smali/com/android/server/wm/WindowManagerService.smali	2017-01-19 18:08:49.714482713 +0000
+***************
+*** 708,716 ****
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mCurrentProfileIds:[I
+  
+!     new-instance v7, Lcom/android/server/policy/PhoneWindowManager;
+  
+!     invoke-direct {v7}, Lcom/android/server/policy/PhoneWindowManager;-><init>()V
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+  
+--- 708,716 ----
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mCurrentProfileIds:[I
+  
+!     new-instance v7, Lcom/android/server/policy/MiuiPhoneWindowManager;
+  
+!     invoke-direct {v7}, Lcom/android/server/policy/MiuiPhoneWindowManager;-><init>()V
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+  

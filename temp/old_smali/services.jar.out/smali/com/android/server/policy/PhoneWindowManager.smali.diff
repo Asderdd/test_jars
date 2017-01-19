@@ -1,0 +1,19 @@
+*** ./smali/com/android/server/policy/PhoneWindowManager.smali	2017-01-19 18:11:51.622289127 +0000
+--- /home/Asderdd/patchrom3/shamrock/temp/new_smali/services.jar.out/./smali/com/android/server/policy/PhoneWindowManager.smali	2017-01-19 18:09:07.966463281 +0000
+***************
+*** 463,469 ****
+  
+  .field mLidState:I
+  
+! .field private final mLock:Ljava/lang/Object;
+  
+  .field mLockScreenTimeout:I
+  
+--- 463,469 ----
+  
+  .field mLidState:I
+  
+! .field final mLock:Ljava/lang/Object;
+  
+  .field mLockScreenTimeout:I
+  

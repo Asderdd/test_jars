@@ -1,0 +1,19 @@
+*** ./smali/android/graphics/Bitmap.smali	2017-01-19 18:12:58.986217483 +0000
+--- /home/Asderdd/patchrom3/shamrock/temp/new_smali/framework.jar.out/./smali/android/graphics/Bitmap.smali	2017-01-19 18:09:46.094422695 +0000
+***************
+*** 41,47 ****
+  
+  
+  # instance fields
+! .field private mBuffer:[B
+  
+  .field mDensity:I
+  
+--- 41,47 ----
+  
+  
+  # instance fields
+! .field public mBuffer:[B
+  
+  .field mDensity:I
+  

@@ -1,0 +1,13 @@
+*** ./smali/com/android/server/SystemServer.smali	2017-01-19 18:12:06.650273143 +0000
+--- /home/Asderdd/patchrom3/shamrock/temp/new_smali/services.jar.out/./smali/com/android/server/SystemServer.smali	2017-01-19 18:09:13.342457558 +0000
+***************
+*** 142,147 ****
+--- 142,149 ----
+      .param p0, "args"    # [Ljava/lang/String;
+  
+      .prologue
++     invoke-static {}, Lmiui/patchrom/ClassHook;->initServerHook()V
++ 
+      new-instance v0, Lcom/android/server/SystemServer;
+  
+      invoke-direct {v0}, Lcom/android/server/SystemServer;-><init>()V
